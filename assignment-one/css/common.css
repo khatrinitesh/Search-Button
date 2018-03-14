@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	display: inline-block;
+	position: relative;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+form{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+form input,
+form button{
+	float: left;
+	height: 30px;
+}
+
+form input{
+	border: 1px solid #ccc;
+	width: 60%;
+	background: url('../img/icon_srch.png') no-repeat left center;
+	padding: 0 0 0 30px;
+	-webkit-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
+	border-radius: 0 0 4px 4px;
+}
+
+form input.active{
+	width: 80%;
+	background: inherit;
+	border-radius: 4px;
+}
+
+form button{
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff;
+	text-align: center;
+	width: 40%;
+	display: none;
+}
+
+form button.active
+{
+	display: block;
+	width: 20%;
+}
